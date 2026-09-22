@@ -1,0 +1,6 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+6,12,tx,4.45,carpet,1000,2.25,2.10,2250.00,2100.00,193.575000,4543.575000
+7,ddd,tx,4.45,tile,100,3.50,4.15,350.00,415.00,34.042500,799.042500
+8,rr,ky,6.00,wood,100,5.15,4.75,515.00,475.00,59.4000,1049.4000
+9,oo,ky,6.00,carpet,1000,2.25,2.10,2250.00,2100.00,261.0000,4611.0000
+10,pp,tx,4.45,tile,100,3.50,4.15,350.00,415.00,34.042500,799.042500
