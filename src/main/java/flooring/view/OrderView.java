@@ -69,8 +69,9 @@ public class OrderView{
         while (name.trim().isEmpty() || name.contains(",") || name.contains(".")) {
             name = userIO.readString("Customer Name cannot be empty or contain , or . : ");
         }
-        String state = userIO.readString("State (TX=Texas, WA=Washington, KY=Kentucky, CA=California): ");
-        String productType = userIO.readString("Product type (Carpet, Laminate, Tile, Wood): ");
+
+        String state = readState(null, false);
+        String productType = readProduct(null, false);
         BigDecimal area = readArea("Area: (100+): ", false);
         
         return new Order(name, state, productType, area);
@@ -81,9 +82,10 @@ public class OrderView{
         
         String name = userIO.readString("Customer Name (" + order.getCustomerName() + "): ");
 
-        String state = userIO.readString("State (TX=Texas, WA=Washington, KY=Kentucky, CA=California) " + "(current: " + order.getState() + "): ");
 
-        String productType = userIO.readString("Product Type (Carpet, Laminate, Tile, Wood) " + "(current: " + order.getProductType() + "): ");
+        String state = readState(order.getState(), true);
+
+        String productType = readProduct(order.getProductType(), true);
 
         BigDecimal area = readArea("Area (100+) (current: " + order.getArea() + "): ", true);
 
@@ -91,13 +93,9 @@ public class OrderView{
             order.setCustomerName(name);
         }
 
-        if (!state.isBlank()) {
-            order.setState(state);
-        }
+        order.setState(state);
 
-        if (!productType.isBlank()) {
-            order.setProductType(productType);
-        }
+        order.setProductType(productType);
 
         if (area != null) {
             order.setArea(area);
@@ -127,9 +125,9 @@ public class OrderView{
         }
     }
 
-    public BigDecimal readArea(String message, boolean allowBlank) {
+    public BigDecimal readArea(String givenArea, boolean allowBlank) {
         while(true) {
-            String input = userIO.readString(message);
+            String input = userIO.readString(givenArea);
 
             if (input.isBlank()) {
                 if(allowBlank){
@@ -150,6 +148,57 @@ public class OrderView{
             }catch(NumberFormatException e) {
                 userIO.print("Please enter a valid number.");
             }
+        }
+    }
+
+    public String readState(String givenState, boolean allowBlank) {
+        while (true) {
+            String state = userIO.readString("State (TX=Texas, WA=Washington, KY=Kentucky, CA=California): ");
+
+            if (state.isBlank()) {
+                if (allowBlank) {
+                    return givenState;
+                }
+                userIO.print("Enter State.");
+                continue;
+            }
+
+            if (state.equalsIgnoreCase("TX") 
+                    || state.equalsIgnoreCase("Texas")
+                    || state.equalsIgnoreCase("WA")
+                    || state.equalsIgnoreCase("Washington")
+                    || state.equalsIgnoreCase("KY")
+                    || state.equalsIgnoreCase("Kentucky")
+                    || state.equalsIgnoreCase("CA")
+                    || state.equalsIgnoreCase("California")) {
+                return state;
+            }
+
+            userIO.print("Invalid state. (TX=Texas, WA=Washington, KY=Kentucky, CA=California): ");
+        }
+    }
+
+    public String readProduct(String givenProduct, boolean allowBlank) {
+        while (true) {
+            String product = userIO.readString("Product type (Carpet, Laminate, Tile, Wood): ");
+
+            if (product.isBlank()) {
+                if (allowBlank) {
+                    return givenProduct;
+                }
+
+                userIO.print("Enter Product type.");
+                continue;
+            }
+
+            if (product.equalsIgnoreCase("Carpet")
+                    || product.equalsIgnoreCase("Laminate")
+                    || product.equalsIgnoreCase("Tile")
+                    || product.equalsIgnoreCase("Wood")) {
+                return product;
+            }
+
+            userIO.print("Invalid product. (Carpet, Laminate, Tile, Wood): ");
         }
     }
 

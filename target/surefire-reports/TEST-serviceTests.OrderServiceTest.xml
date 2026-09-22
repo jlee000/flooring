@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="serviceTests.OrderServiceTest" time="1.16" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="serviceTests.OrderServiceTest" time="1.462" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire13933281546967529532\surefirebooter-20260922141111713_3.jar C:\Users\User\AppData\Local\Temp\surefire13933281546967529532 2026-09-22T14-11-10_470-jvmRun1 surefire-20260922141111713_1tmp surefire_0-20260922141111713_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire6713950642598330694\surefirebooter-20260922171240860_3.jar C:\Users\User\AppData\Local\Temp\surefire6713950642598330694 2026-09-22T17-12-39_930-jvmRun1 surefire-20260922171240860_1tmp surefire_0-20260922171240860_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\User\Documents\Docs\htdocs\workspace\M3\flooring\flooring\target\test-classes;C:\Users\User\Documents\Docs\htdocs\workspace\M3\flooring\flooring\target\classes;C:\Users\User\.m2\repository\org\springframework\spring-context\4.3.4.RELEASE\spring-context-4.3.4.RELEASE.jar;C:\Users\User\.m2\repository\org\springframework\spring-aop\4.3.4.RELEASE\spring-aop-4.3.4.RELEASE.jar;C:\Users\User\.m2\repository\org\springframework\spring-beans\4.3.4.RELEASE\spring-beans-4.3.4.RELEASE.jar;C:\Users\User\.m2\repository\org\springframework\spring-core\4.3.4.RELEASE\spring-core-4.3.4.RELEASE.jar;C:\Users\User\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\User\.m2\repository\org\springframework\spring-expression\4.3.4.RELEASE\spring-expression-4.3.4.RELEASE.jar;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.3.1\junit-jupiter-api-5.3.1.jar;C:\Users\User\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\User\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\User\.m2\repository\org\junit\platform\junit-platform-commons\1.3.1\junit-platform-commons-1.3.1.jar;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.3.1\junit-jupiter-params-5.3.1.jar;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.3.1\junit-jupiter-engine-5.3.1.jar;C:\Users\User\.m2\repository\org\junit\platform\junit-platform-engine\1.3.1\junit-platform-engine-1.3.1.jar;C:\Users\User\.m2\repository\org\mockito\mockito-core\2.23.0\mockito-core-2.23.0.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy\1.9.0\byte-buddy-1.9.0.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.0\byte-buddy-agent-1.9.0.jar;C:\Users\User\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\User\.m2\repository\org\mockito\mockito-junit-jupiter\2.23.0\mockito-junit-jupiter-2.23.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire13933281546967529532\surefirebooter-20260922141111713_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire6713950642598330694\surefirebooter-20260922171240860_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.1+12-LTS-39"/>
@@ -56,6 +56,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testCalculateOrder" classname="serviceTests.OrderServiceTest" time="1.143"/>
-  <testcase name="testSetOrderNumber" classname="serviceTests.OrderServiceTest" time="0.002"/>
+  <testcase name="testCalculateOrder" classname="serviceTests.OrderServiceTest" time="1.45"/>
+  <testcase name="testSetOrderNumber" classname="serviceTests.OrderServiceTest" time="0.003"/>
 </testsuite>
