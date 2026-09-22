@@ -1,2 +1,0 @@
-OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
-1,ee,wa,9.25,wood,1002,5.15,4.75,5160.30,4759.50,917.581500,10837.381500

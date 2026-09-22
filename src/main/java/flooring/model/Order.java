@@ -100,9 +100,18 @@ public class Order {
     }
     @Override
     public String toString() {
-        return "Order [orderNumber=" + orderNumber + ", customerName=" + customerName + ", state=" + state
-                + ", taxRate=" + taxRate + ", productType=" + productType + ", area=" + area + ", costPerSquareFoot="
-                + costPerSquareFoot + ", laborCostPerSquareFoot=" + laborCostPerSquareFoot + ", materialCost="
-                + materialCost + ", laborCost=" + laborCost + ", tax=" + tax + ", total=" + total + "]";
+        return "Order:\n"
+                + "orderNumber=" + orderNumber + "\n"
+                + "customerName=" + customerName + "\n"
+                + "state=" + state + "\n"
+                + "taxRate=" + taxRate + "\n"
+                + "productType=" + productType + "\n"
+                + "area=" + area + "\n"
+                + "costPerSquareFoot=" + costPerSquareFoot + "\n"
+                + "laborCostPerSquareFoot=" + laborCostPerSquareFoot + "\n"
+                + "materialCost=" + materialCost + "\n"
+                + "laborCost=" + laborCost + "\n"
+                + "tax=" + tax + "\n"
+                + "total=" + total;
     }
 }

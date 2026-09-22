@@ -47,6 +47,7 @@ public class OrderView{
     public void displayOrders(List<Order> orders){
         for (Order order : orders) {
             userIO.print(order.toString());
+            userIO.print("");
         }
     }
 
@@ -67,7 +68,7 @@ public class OrderView{
         while (name.trim().isEmpty() || name.contains(",") || name.contains(".")) {
             name = userIO.readString("Customer Name cannot be empty or contain , or . : ");
         }
-        String state = userIO.readString("State (TX=Texas, WA=Washington, KY=Kentucky, CA=Calfornia): ");
+        String state = userIO.readString("State (TX=Texas, WA=Washington, KY=Kentucky, CA=California): ");
         String productType = userIO.readString("Product type (Carpet, Laminate, Tile, Wood): ");
         BigDecimal area = readArea("Area: (100+): ", false);
         
