@@ -55,6 +55,7 @@ public class OrderView{
         if (order == null) {
             userIO.print("Order not found.");
         } else {
+            userIO.print("");
             userIO.print(order.toString());
         }
     }
