@@ -93,9 +93,13 @@ public class OrderView{
             order.setCustomerName(name);
         }
 
-        order.setState(state);
+        if (state != null) {
+            order.setState(state);
+        }
 
-        order.setProductType(productType);
+        if (productType != null) {
+            order.setProductType(productType);
+        }
 
         if (area != null) {
             order.setArea(area);

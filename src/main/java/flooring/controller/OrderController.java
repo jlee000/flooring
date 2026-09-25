@@ -8,16 +8,16 @@ import org.springframework.stereotype.Component;
 import flooring.exception.OrderException;
 import flooring.exception.PersistenceException;
 import flooring.model.Order;
-import flooring.service.OrderServiceImpl;
+import flooring.service.OrderService;
 import flooring.view.OrderView;
 
 @Component
 public class OrderController {
     
-private final OrderServiceImpl orderService;
+private final OrderService orderService;
 private final OrderView orderView;
 
-    public OrderController(OrderServiceImpl orderService, OrderView orderView) {
+    public OrderController(OrderService orderService, OrderView orderView) {
         this.orderService = orderService;
         this.orderView = orderView;
     }

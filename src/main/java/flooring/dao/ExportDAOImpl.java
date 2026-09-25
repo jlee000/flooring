@@ -21,12 +21,12 @@ public class ExportDAOImpl implements ExportDAO{
         File[] files = new File("src/main/resources/Orders").listFiles();
 
         if (files == null) {
-            throw new PersistenceException("Could not find Orders directory.");
+            throw new PersistenceException("Could not find Orders.");
         }
 
-        File newDirectory = new File("src/main/resources/DataExports");
-        newDirectory.mkdirs();
-        File exportFile = new File(newDirectory, "DataExport.txt");
+        File directory = new File("src/main/resources/DataExports");
+        directory.mkdirs();
+        File exportFile = new File(directory, "DataExport.txt");
 
         try(PrintWriter pw = new PrintWriter(new FileWriter(exportFile))){
             for (File file : files) {
